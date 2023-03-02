@@ -1,0 +1,76 @@
+<table border="1" class="dataframe">
+
+<body bgcolor="#cccccc">
+<style>
+body {
+	background-image: url("Beautiful-girl-League-of-Legends_1920x1080.jpg");
+background-size:1920px 1080px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position:right;
+} 
+
+
+<html>
+<head>
+<title>英雄聯盟直播主</title>
+
+
+<style>
+a {
+    text-decoration:none;
+}
+</style>
+</head>
+
+
+
+
+
+<h2 align="center"><font color="green"><strong>英雄聯盟直播主</strong><br></font></h2>
+<br>
+<br>
+<div>
+  <input type="text" id="search-input">
+  <button onclick="searchText()">Search</button>
+</div>
+
+<script>
+function searchText() {
+  var searchText = document.getElementById("search-input").value;
+  if (searchText != "") {
+    if (window.find && window.getSelection) {
+      document.designMode = "on";
+      var sel = window.getSelection();
+      sel.collapse(document.body, 0);
+      while (window.find(searchText)) {
+        document.execCommand("HiliteColor", false, "yellow");
+        sel.collapseToEnd();
+      }
+      document.designMode = "off";
+    }
+    else if (document.body.createTextRange) {
+      var textRange = document.body.createTextRange();
+      while (textRange.findText(searchText)) {
+        textRange.execCommand("BackColor", false, "yellow");
+        textRange.collapse(false);
+      }
+    }
+  }
+}
+</script>
+<p align="left"><font color="pink"><strong>Youtuber<strong></font>
+<p align="left"><a href="https://www.youtube.com/@user-nb1um1tg9h"><font color="white">上單老祖</font></a></p>
+
+<br>
+<br>
+<p align="left"><font color="pink"><strong>Twitch<strong></font>
+<p align="left"><a href="https://www.twitch.tv/bebelolz"><font color="white">BeBe</font></a></p>
+<p align="left"><a href="https://www.twitch.tv/never_loses"><font color="white">NL</font></a></p>
+<p align="left"><a href="https://www.twitch.tv/liang_0714"><font color="white">小亮</font></a></p>
+<p align="left"><a href="https://www.twitch.tv/s7735061"><font color="white">狗哥</font></a></p>
+<p align="left"><a href="https://www.twitch.tv/mapletom"><font color="white">楓糖</font></a></p>
+<p align="left"><a href="https://www.twitch.tv/breeze0920"><font color="white">微風</font></a></p>
+<p align="left"><a href="https://www.twitch.tv/butterflyouo"><font color="white">蝴蝶</font></a></p>
+</body>
+</html>

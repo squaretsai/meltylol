@@ -1,0 +1,66 @@
+<table border="1" class="dataframe">
+
+<body bgcolor="#cccccc">
+<style>
+body {
+	background-image: url("346409-sepik.jpg");
+background-size:1920px 1080px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position:right;
+} 
+
+
+<html>
+<head>
+<title>推薦文章</title>
+
+
+<style>
+a {
+    text-decoration:none;
+}
+</style>
+</head>
+
+
+
+
+
+<h2 align="center"><font color="green"><strong>推薦文章</strong><br></font></h2>
+<br>
+<br>
+<div>
+  <input type="text" id="search-input">
+  <button onclick="searchText()">Search</button>
+</div>
+
+<script>
+function searchText() {
+  var searchText = document.getElementById("search-input").value;
+  if (searchText != "") {
+    if (window.find && window.getSelection) {
+      document.designMode = "on";
+      var sel = window.getSelection();
+      sel.collapse(document.body, 0);
+      while (window.find(searchText)) {
+        document.execCommand("HiliteColor", false, "yellow");
+        sel.collapseToEnd();
+      }
+      document.designMode = "off";
+    }
+    else if (document.body.createTextRange) {
+      var textRange = document.body.createTextRange();
+      while (textRange.findText(searchText)) {
+        textRange.execCommand("BackColor", false, "yellow");
+        textRange.collapse(false);
+      }
+    }
+  }
+}
+</script>
+
+<p align="left"><a href="https://forum.gamer.com.tw/Co.php?bsn=17532&sn=6083715"><font color="white">【攻略】S13 約瑞科 教你如何成為峽谷慣老闆，先攻洗錢討債流套路( 更新 特殊流派o(￣ヘ￣o＃)</font></a></p>
+
+</body>
+</html>
